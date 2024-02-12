@@ -36,6 +36,7 @@ workers()
 @everywhere egrid = zeros(ne)
 @everywhere P     = zeros(ne, ne) # transition probability matrix
 @everywhere V     = zeros(T, nx, ne) # value function
+@everywhere C     = zeros(T, nx, ne) # consumption
 
 # Initialize value function as a shared array
 using SharedArrays
@@ -76,7 +77,7 @@ for j = 1:ne
   end
 end
 
-# Exponential of the grid e
+# Exponential of the grid e since ct + xt+1 = (1+r)xt + e^et*w
 for i = 1:ne
   egrid[i] = exp(egrid[i]);
 end
@@ -90,6 +91,8 @@ print("Life cycle computation: \n")
 print(" \n")
 using Dates
 start = Dates.unix2datetime(time())
+# Initialize value function as a shared array
+# tempV = SharedArray{Float64}(ne*nx, init = tempV -> tempV[Base.localindexes(tempV)] = myid())
 
 for age = T:-1:1
 
@@ -97,7 +100,8 @@ for age = T:-1:1
     tempV[ind] = myid();
 
     ix      = convert(Int, ceil(ind/ne));
-    ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
+    # ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
+    ie      = convert(Int, mod(ind, ne));
 
     VV = -10^3;
 
@@ -130,7 +134,8 @@ for age = T:-1:1
   for ind = 1:(ne*nx)
 
     ix      = convert(Int, ceil(ind/ne));
-    ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
+    # ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
+    ie      = convert(Int, mod(ind, ne));
 
     V[age, ix, ie] = tempV[ind]
   end
