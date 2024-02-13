@@ -7,7 +7,7 @@ using Distributed
 #--------------------------------#
 
 # Number of workers
-addprocs(10)
+addprocs(2)
 workers()
 
 # Grid for savings x in the range [0.1,4.0]
@@ -25,7 +25,7 @@ workers()
 # Utility function I assume it's CRRA c^(1-γ)/(1-γ)
 @everywhere beta = 0.97; # discount factor
 @everywhere γ = 2; # risk aversion
-@everywhere T = 10; # number of periods
+@everywhere T = 30; # number of periods
 
 # Prices
 @everywhere r  = 0.07; # interest rate
@@ -39,11 +39,11 @@ workers()
 @everywhere C     = zeros(T, nx, ne) # consumption
 
 # Initialize value function as a shared array
-using SharedArrays
-tempV = SharedArray{Float64}(ne*nx)
-
+@everywhere using SharedArrays
+tempV = SharedArray{Float64,1}(ne*nx, init = tempV -> tempV[localindices(tempV)] = repeat([myid()], length(localindices(tempV))));
+tempC = SharedArray{Float64,1}(ne*nx, init = tempC -> tempC[localindices(tempC)] = repeat([myid()], length(localindices(tempC))));
 #--------------------------------#
-#         Grid creation          #]
+#         Grid creation          #
 #--------------------------------#
 
 # Grid for x
@@ -97,14 +97,12 @@ start = Dates.unix2datetime(time())
 for age = T:-1:1
 
   @sync @distributed for ind = 1:(ne*nx)
-    tempV[ind] = myid();
 
     ix      = convert(Int, ceil(ind/ne));
-    # ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
-    ie      = convert(Int, mod(ind, ne));
+    ie      = convert(Int, floor(mod(ind-0.01, ne))+1);
 
     VV = -10^3;
-
+    CC = 0.0;
     for ixp = 1:nx
 
       expected = 0.0;
@@ -115,10 +113,13 @@ for age = T:-1:1
       end
 
       cons  = (1 + r)*xgrid[ix] + egrid[ie]*w - xgrid[ixp];
+      if cons >= 0
+        CC = cons;
+      end
 
       utility = (cons^(1-γ))/(1-γ) + beta*expected;
 
-      if(cons <= 0)
+      if(cons < 0)
         utility = -10^(5);
       end # constraint of positive consumption
 
@@ -129,15 +130,16 @@ for age = T:-1:1
     end
 
     tempV[ind] = VV;
+    tempC[ind] = CC;
   end
 
   for ind = 1:(ne*nx)
 
     ix      = convert(Int, ceil(ind/ne));
-    # ie      = convert(Int, floor(mod(ind-0.05, ne))+1);
-    ie      = convert(Int, mod(ind, ne));
+    ie      = convert(Int, floor(mod(ind-0.01, ne))+1);
 
     V[age, ix, ie] = tempV[ind]
+    C[age, ix, ie] = tempC[ind]
   end
 
   local finish = convert(Int, Dates.value(Dates.unix2datetime(time())- start))/1000;
@@ -161,4 +163,12 @@ print(" \n")
 # I print the first entries of the value function, to check
 for i = 1:3
   print(round(V[1, 1, i], digits=5), "\n")
+end
+print(" \n")
+print(" - - - - - - - - - - - - - - - - - - - - - \n")
+print(" \n")
+print("The first entries of the optimal consumption: \n")
+print(" \n")
+for i = 1:3
+  print(round(C[1,1,i], digits=5), "\n")
 end
