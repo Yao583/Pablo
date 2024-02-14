@@ -7,7 +7,7 @@ using Distributed
 #--------------------------------#
 
 # Number of workers
-addprocs(10)
+addprocs(2)
 workers()
 
 # Grid for savings x in the range [0.1,4.0]

@@ -1,40 +1,38 @@
 using Distributions
-using Distributed
 #------------------------------------#
 #-----------Initialization-----------#
 #------------------------------------#
-#number of workers
-addprocs(10);
 
 # utility
-@everywhere γ = 2;
-@everywhere beta = 0.97;
-@everywhere w = 5;
-@everywhere r = 0.07;
+γ = 2;
+beta = 0.97;
+w = 5;
+r = 0.07;
 
 # productivity shock
-@everywhere sigma_eps = 0.02058;
-@everywhere lambda = 0.99;
-@everywhere m = 1.5;
+sigma_eps = 0.02058;
+lambda = 0.99;
+m = 1.5;
+
 
 # number of states 
-@everywhere ne = 15;
-@everywhere nx = 300;
-@everywhere T  = 30;
+ne = 15;
+nx = 300;
+T = 30;
 
 # some matrices
-@everywhere xgrid = zeros(nx);
-@everywhere egrid = zeros(ne);
-@everywhere tempV = zeros(nx*ne);
-@everywhere tempC = zeros(nx*ne);
-@everywhere V     = zeros(T,nx,ne);
-@everywhere C     = zeros(T,nx,ne);
+ xgrid = zeros(nx);
+ egrid = zeros(ne);
+ tempV = zeros(nx*ne);
+ tempC = zeros(nx*ne);
+ V     = zeros(T,nx,ne);
+ C     = zeros(T,nx,ne);
 #------------------------------------#
 #-----------Grid---------------------#
 #------------------------------------#
 # savings
-@everywhere xmax = 4.0;
-@everywhere xmin = 0.1;
+ xmax = 4.0;
+ xmin = 0.1;
 xstep = (xmax - xmin)/(nx-1);
 for i = 1:nx
     xgrid[i] = xmin + (i-1)*xstep;
@@ -48,7 +46,7 @@ for i in 1:ne
 end
 
 # Transition probability matrix
-@everywhere P = zeros(ne,ne);
+ P = zeros(ne,ne);
 mm = egrid[2] - egrid[1];
 for j in 1:ne
     for k in 1:ne
@@ -67,10 +65,7 @@ for i in 1:ne
     egrid[i] = exp(egrid[i]);
 end
 
-# SharedArrays
-@everywhere using SharedArrays
-tempV = SharedArray{Float64,1}(nx*ne, init = tempV -> tempV[localindices(tempV)] = repeat([myid()], length(localindices(tempV))));
-tempC = SharedArray{Float64,1}(nx*ne, init = tempC -> tempC[localindices(tempC)] = repeat([myid()], length(localindices(tempC))));
+
 #------------------------------------#
 #---------Consumption Computation----#
 #------------------------------------#
@@ -81,7 +76,7 @@ print("The computation begins", "\n")
 using Dates
 start = Dates.unix2datetime(time());
 for age = T:-1:1
-    @sync @distributed for ind = 1:nx*ne
+    for ind = 1:nx*ne
     
         ix = convert(Int, ceil(ind/ne));
         ie = convert(Int, floor(mod(ind-0.01,ne))+1);
@@ -108,14 +103,8 @@ for age = T:-1:1
                 VV = utility;
             end
         end
-        tempV[ind] = VV;
-        tempC[ind] = cons;
-    end
-    for ind in 1:nx*ne
-        ix = convert(Int, ceil(ind/ne));
-        ie = convert(Int, floor(mod(ind-0.01,ne))+1);
-        V[age,ix,ie] = tempV[ind];
-        C[age,ix,ie] = tempC[ind];
+        V[age,ix,ie] = VV;
+        C[age,ix,ie] = cons;
     end
 
     local finish = convert(Int,Dates.value(Dates.unix2datetime(time()) - start))/1000;
