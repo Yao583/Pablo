@@ -7,7 +7,7 @@ using Distributed
 #--------------------------------#
 
 # Number of workers
-addprocs(2)
+addprocs(10)
 workers()
 
 # Grid for savings x in the range [0.1,4.0]
@@ -91,8 +91,6 @@ print("Life cycle computation: \n")
 print(" \n")
 using Dates
 start = Dates.unix2datetime(time())
-# Initialize value function as a shared array
-# tempV = SharedArray{Float64}(ne*nx, init = tempV -> tempV[Base.localindexes(tempV)] = myid())
 
 for age = T:-1:1
 
