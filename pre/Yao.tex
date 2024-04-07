@@ -1,0 +1,124 @@
+\documentclass[dvipsnames,mathserif]{beamer}
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg=black}
+\setbeamerfont{footline}{series=\bfseries}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx, setspace, appendix, mathrsfs, amsmath, amsfonts,caption, mathtools}
+\usepackage[english]{babel}
+%\usetheme{Frankfurt}%1
+\usetheme{Darmstadt}%1
+
+% for RTL liste
+\makeatletter
+\newcommand{\RTListe}{\raggedleft\rightskip\leftm}
+\newcommand{\leftm}{\@totalleftmargin}
+\makeatother
+
+% RTL frame title
+\setbeamertemplate{frametitle}
+{\vspace*{-1mm}
+  \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=2.2em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\hskip1ex\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+}
+% align subsection in toc
+\makeatletter
+\setbeamertemplate{subsection in toc}
+{\leavevmode\rightskip=5ex%
+  \llap{\raise0.1ex\beamer@usesphere{subsection number projected}{bigsphere}\kern1ex}%
+  \inserttocsubsection\par%
+}
+\makeatother
+
+% RTL triangle for itemize
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+%\setbeamertemplate{itemize item}{\rule{4pt}{4pt}}
+
+\defbeamertemplate{enumerate item}{square2}
+{\LR{
+    %
+    \hbox{%
+    \usebeamerfont*{item projected}%
+    \usebeamercolor[bg]{item projected}%
+    \vrule width2.25ex height1.85ex depth.4ex%
+    \hskip-2.25ex%
+    \hbox to2.25ex{%
+      \hfil%
+      {\color{fg}\insertenumlabel}%
+      \hfil}%
+  }%
+}}
+
+\setbeamertemplate{enumerate item}[square2]
+\setbeamertemplate{navigation symbols}{}
+
+
+\titlegraphic { 
+\begin{tikzpicture}[overlay,remember picture, opacity=0.1,]
+\node[] at (0, 2.9){
+};\end{tikzpicture}}
+\setbeamertemplate{caption}[numbered]
+\begin{document}
+
+\rightskip\rightmargin
+\title{Exploiting Symmetry in High-Dimensional Dynamic Programming}
+\author{Kahou at al}
+
+%\institute{Boston College}
+\footnotesize{\date{\today }
+
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+%
+\footnotesize \tableofcontents
+%
+\section{Introduction}
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+\section{Literature}
+\begin{frame}{Literature}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+
+\section{Theory}
+\begin{frame}{Theory}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+
+\section{Deep Learning Algorithm}
+\begin{frame}{Deep Learning Algorithm}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+
+\section{Applications}
+\begin{frame}{Applications}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{}
+    \begin{itemize}
+        \item
+    \end{itemize}
+\end{frame}
+\end{document}
