@@ -13,6 +13,7 @@
 \makeatletter
 \newcommand{\RTListe}{\raggedleft\rightskip\leftm}
 \newcommand{\leftm}{\@totalleftmargin}
+\newcommand{\rnumber}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 \makeatother
 
 % RTL frame title
@@ -67,9 +68,9 @@
 
 \rightskip\rightmargin
 \title{Exploiting Symmetry in High-Dimensional Dynamic Programming}
-\author{Kahou at al}
+\author{Kahou at al, presented by Yao Luo}
 
-%\institute{Boston College}
+\institute{Boston College}
 \footnotesize{\date{\today }
 
 
@@ -84,41 +85,126 @@
 \section{Introduction}
 \begin{frame}{Introduction}
     \begin{itemize}
-        \item
+        \item 
     \end{itemize}
 \end{frame}
-\section{Literature}
-\begin{frame}{Literature}
+\begin{frame}{Introduction}
+Model: Investment under uncertainty
+\end{frame}
+\begin{frame}{Introduction}
+Model solution:
+How to solve the curse of dimensionality problem?
+\end{frame}
+
+\section{Permutation-Invariant Dynamic Programming}
+\begin{frame}{Permutation-Invariant Dynamic Programming}
     \begin{itemize}
-        \item
+        \item Dimensionality reduction\\
+        \vspace{0.2cm}
+        \item Definition 1+2+intuition
+        \vspace{0.2cm}
+        \item Representation theorem
+    \end{itemize}
+\end{frame}
+\begin{frame}{Permutation-Invariant Dynamic Programming}
+    \begin{itemize}
+        \item Specific functional representation in the investment model
     \end{itemize}
 \end{frame}
 
-\section{Theory}
-\begin{frame}{Theory}
+\section{Concentration of Measure}
+\begin{frame}{Concentration of Measure}
     \begin{itemize}
-        \item
+        \item Why? 
+        \vspace{0.2cm}
+        \item definition 4 + proposition 3 + intuition\\
+        \vspace{0.2cm}
     \end{itemize}
 \end{frame}
 
-\section{Deep Learning Algorithm}
-\begin{frame}{Deep Learning Algorithm}
+\section{Concentration of Measure}
+\begin{frame}{Concentration of Measure}
     \begin{itemize}
-        \item
+        \item When it holds?\\
+        \vspace{0.2cm}
+        \item section 5
     \end{itemize}
 \end{frame}
 
-\section{Applications}
-\begin{frame}{Applications}
+
+\section{Deep Learning Implementation}
+\begin{frame}{Deep Learning Implementation}
     \begin{itemize}
-        \item
+        \item networks architecture set up:3\\
+        \vspace{0.2cm}
+        \item baseline case
+        \vspace{0.2cm}
+        \item Training: Euler residuals + minimization
     \end{itemize}
 \end{frame}
 
-\section{Conclusion}
-\begin{frame}{}
+\begin{frame}{Deep Learning Implementation}
     \begin{itemize}
-        \item
+        \item Algorithm
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Deep Learning Implementation}
+Case I: $\nu = 1$
+\begin{figure}[h!]
+\centering
+\includegraphics[width = 0.8\textwidth]{3.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Deep Learning Implementation}
+\begin{figure}[h!]
+\centering
+\includegraphics[width = 0.8\textwidth]{4.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Deep Learning Implementation}
+\begin{figure}[h!]
+\centering
+\includegraphics[width = 0.8\textwidth]{5.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Deep Learning Implementation}
+\begin{figure}[h!]
+\centering
+\includegraphics[width = \textwidth]{6.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Deep Learning Implementation}
+Case II: 
+\end{frame}
+
+\section{Extensions}
+\begin{frame}{Extensions}
+The tools are useful for solving any high-dimensional functional equations with some degree of symmetry, especially when these equations contain high-dimensional expectations.
+    \begin{itemize}
+        \item Decreasing returns to scale\\
+        \vspace{0.2cm}
+        \item Multiple productivity types\\
+        \vspace{0.2cm}
+        \item Complex idiosyncratic states\\
+        \vspace{0.2cm}
+        \item Global solutions with transitions and aggregate shocks
+
+    \end{itemize}
+\end{frame}
+
+\section{Discussion}
+\begin{frame}{Discussion}
+    \begin{itemize}
+        \item Solve high-dimensional dynamic programming problems in minutes.
+        \vspace{0.2cm}
+        \item Double-descent
+        \vspace{0.2cm}
+        \item Model selection since results are sensitive to different network architectures. 
     \end{itemize}
 \end{frame}
 \end{document}

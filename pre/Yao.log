@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  4 APR 2024 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  6 APR 2024 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,24 +858,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./Yao.aux)
 \openout1 = `Yao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -933,7 +933,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 66.
+Package hyperref Info: Link coloring OFF on input line 67.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -947,9 +947,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
  (./Yao.out) (./Yao.out)
 \@outlinefile=\write5
 \openout5 = `Yao.out'.
@@ -982,42 +982,185 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./Yao.nav)
+Overfull \hbox (112.69594pt too wide) detected at line 67
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 70.
+(hyperref)                setting the option has no effect on input line 71.
+
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
 
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 (./Yao.toc)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
 
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 89
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 90
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [2
+)
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
 
-] [3]
+[2
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[3]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
 [4
 
-] [5
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
 
-] [6
+[5
 
-] [7
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
 
-] [8
+[6
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[7
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[8
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[9
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[10
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[11
+
+]
+<3.png, id=420, 837.1275pt x 435.6275pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 158.
+(pdftex.def)             Requested size: 245.83282pt x 127.92404pt.
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[12
+
+ <./3.png>]
+<4.png, id=452, 822.07124pt x 422.57875pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 165.
+(pdftex.def)             Requested size: 245.83282pt x 126.36838pt.
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[13
+
+ <./4.png>]
+<5.png, id=482, 753.81625pt x 389.455pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 172.
+(pdftex.def)             Requested size: 245.83282pt x 127.00517pt.
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[14
+
+ <./5.png>]
+<6.png, id=512, 813.0375pt x 422.57875pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 179.
+(pdftex.def)             Requested size: 307.28987pt x 159.7111pt.
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[15
+
+ <./6.png>]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[16
+
+]
+Overfull \hbox (8.08392pt too wide) in paragraph at lines 198--198
+\OT1/cmss/m/n/9 some de-gree of sym-me-try, es-pe-cially when these equa-tions 
+con-tain high-dimensional
+ []
+
+
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[17
+
+]
+Overfull \hbox (112.69594pt too wide) has occurred while \output is active
+  [] [][][][] [][][] [][] [][] [][][][][][][][] [][] [][]  
+ []
+
+[18
 
 ]
 \tf@nav=\write6
@@ -1031,30 +1174,32 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
  (./Yao.aux)
 Package rerunfilecheck Info: File `Yao.out' has not changed.
-(rerunfilecheck)             Checksum: 2EBFC05A54755FBCABEDCCB88726A54E;629.
+(rerunfilecheck)             Checksum: 6F3C4A90876C5E2DB4136E52F0392AB7;1070.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 73 ({)
+### simple group (level 1) entered at line 74 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27749 strings out of 478268
- 554852 string characters out of 5846347
- 817062 words of memory out of 5000000
- 45396 multiletter control sequences out of 15000+600000
- 475909 words of font info for 54 fonts, out of 8000000 for 9000
+ 27847 strings out of 478268
+ 555923 string characters out of 5846347
+ 823075 words of memory out of 5000000
+ 45464 multiletter control sequences out of 15000+600000
+ 477619 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,20n,104p,449b,941s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,20n,104p,449b,961s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msam10.pfb>
-Output written on Yao.pdf (8 pages, 66795 bytes).
+/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx
+10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msam10.pfb>
+Output written on Yao.pdf (18 pages, 568558 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 23 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 578 compressed objects within 6 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
