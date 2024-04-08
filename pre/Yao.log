@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  7 APR 2024 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  8 APR 2024 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,25 +990,28 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 
 ]
 (./Yao.toc)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101
-.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
+
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
+
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-1.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 99
+.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [2
 
 ] [3]
+Overfull \vbox (9.95686pt too high) detected at line 124
+ []
+
 [4
 
 ] [5
@@ -1017,60 +1020,64 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 ] [7
 
-] [8
-
 ]
-<3.png, id=320, 837.1275pt x 435.6275pt>
+<3.png, id=284, 837.1275pt x 435.6275pt>
 File: 3.png Graphic file (type png)
 <use 3.png>
-Package pdftex.def Info: 3.png  used on input line 181.
+Package pdftex.def Info: 3.png  used on input line 178.
 (pdftex.def)             Requested size: 338.02072pt x 175.8964pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 181--181
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 178--178
  [] 
  []
 
 
-Overfull \vbox (11.7698pt too high) detected at line 181
+Overfull \vbox (11.7698pt too high) detected at line 178
  []
 
-[9
+[8
 
  <./3.png>]
-<4.png, id=347, 822.07124pt x 422.57875pt>
+<4.png, id=310, 822.07124pt x 422.57875pt>
 File: 4.png Graphic file (type png)
 <use 4.png>
-Package pdftex.def Info: 4.png  used on input line 190.
+Package pdftex.def Info: 4.png  used on input line 187.
 (pdftex.def)             Requested size: 276.559pt x 142.15958pt.
- [10
+ [9
 
  <./4.png>]
-<5.png, id=373, 753.81625pt x 389.455pt>
+<5.png, id=335, 753.81625pt x 389.455pt>
 File: 5.png Graphic file (type png)
 <use 5.png>
-Package pdftex.def Info: 5.png  used on input line 198.
+Package pdftex.def Info: 5.png  used on input line 195.
 (pdftex.def)             Requested size: 245.83282pt x 127.00517pt.
- [11
+ [10
 
  <./5.png>]
-<6.png, id=400, 813.0375pt x 422.57875pt>
+<6.png, id=360, 813.0375pt x 422.57875pt>
 File: 6.png Graphic file (type png)
 <use 6.png>
-Package pdftex.def Info: 6.png  used on input line 208.
+Package pdftex.def Info: 6.png  used on input line 205.
 (pdftex.def)             Requested size: 307.28987pt x 159.7111pt.
+ [11
+
+ <./6.png>]
+<7.png, id=385, 868.24374pt x 497.86pt>
+File: 7.png Graphic file (type png)
+<use 7.png>
+Package pdftex.def Info: 7.png  used on input line 213.
+(pdftex.def)             Requested size: 307.28987pt x 176.20596pt.
  [12
 
- <./6.png>] [13
-
-]
-Overfull \hbox (8.08392pt too wide) in paragraph at lines 227--227
+ <./7.png>]
+Overfull \hbox (8.08392pt too wide) in paragraph at lines 228--228
 \OT1/cmss/m/n/9 some de-gree of sym-me-try, es-pe-cially when these equa-tions 
 con-tain high-dimensional
  []
 
-[14
+[13
 
-] [15
+] [14
 
 ]
 \tf@nav=\write6
@@ -1091,13 +1098,13 @@ Package rerunfilecheck Info: File `Yao.out' has not changed.
 ### simple group (level 1) entered at line 76 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27890 strings out of 478268
- 557210 string characters out of 5846347
- 824074 words of memory out of 5000000
- 45509 multiletter control sequences out of 15000+600000
- 479162 words of font info for 66 fonts, out of 8000000 for 9000
+ 27853 strings out of 478268
+ 556096 string characters out of 5846347
+ 824073 words of memory out of 5000000
+ 45473 multiletter control sequences out of 15000+600000
+ 478857 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,20n,104p,449b,955s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,20n,104p,449b,953s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cme
@@ -1105,19 +1112,18 @@ xtra/cmex9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.
-pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-
-Output written on Yao.pdf (15 pages, 652837 bytes).
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+>
+Output written on Yao.pdf (14 pages, 766125 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 476 compressed objects within 5 object streams
- 38 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 527 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

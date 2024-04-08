@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1712512142 "Yao.tex" "Yao.pdf" "Yao" 1712512144
+["pdflatex"] 1712552265 "Yao.tex" "Yao.pdf" "Yao" 1712552266
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -37,7 +37,6 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
-  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb" 1248133631 24373 a91d375736817a75026663adcb2190c1 ""
@@ -238,11 +237,12 @@
   "4.png" 1712460320 195072 a82db3f40438046e807e2e5c5ec0718a ""
   "5.png" 1712460340 135328 4a1d301619e10eda9c76d813f8980596 ""
   "6.png" 1712460357 207726 8ff69ef31688c4232b44cea068d83e47 ""
-  "Yao.aux" 1712512144 4865 c4d85376bc65b79269c6a1c3a363386e "pdflatex"
-  "Yao.nav" 1712512144 2606 341eba23c9afbe324a1e9cf8f372337e "pdflatex"
-  "Yao.out" 1712512144 793 6b6d558adf8baa756a8af6d1b399d9e5 "pdflatex"
-  "Yao.tex" 1712512141 8168 b93d69e91bf4f6d064f76fe13178fa83 ""
-  "Yao.toc" 1712512144 380 c6969a028f6543ffd207711aec3ae33f "pdflatex"
+  "7.png" 1712547753 197624 8be3cc80bfe8cb90a8b7d8041d38f256 ""
+  "Yao.aux" 1712552266 4737 0a2778ab5096ce6f881fd7cb8da20238 "pdflatex"
+  "Yao.nav" 1712552266 2514 1f3d797d235bf21a19cdb281dcc0af3c "pdflatex"
+  "Yao.out" 1712552266 793 6b6d558adf8baa756a8af6d1b399d9e5 "pdflatex"
+  "Yao.tex" 1712552264 8539 a051a9ab6bb6f5ba07f8f33ee1a33439 ""
+  "Yao.toc" 1712552266 380 7904d0cdf02fcd27daa21a0fffa60b7b "pdflatex"
   (generated)
   "Yao.aux"
   "Yao.log"
