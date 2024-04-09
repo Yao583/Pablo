@@ -87,13 +87,13 @@
 \section{Introduction}
 \begin{frame}{Introduction}
     \begin{itemize}
-        \item A new method for solving high-dimensional dynamic programming problems with finite heterogeneous agents using deep learning.\\
+        \item A new method for solving high-dimensional dynamic programming problems with a finite but large number of heterogeneous agents. Accurate and quick.\\
         \vspace{0.2cm}
-        \item Exploiting symmetry in the approximate law of motion and the value function.
+        \item Exploiting symmetry.
         \vspace{0.2cm}
-        \item Calculate high-dimensional expectations using a single Monte Carlo draw thanks to concentration of measure.
+        \item Concentration of measure.
         \vspace{0.2cm}
-        \item Designing and training deep learning architectures that exploit symmetry and concentration of measure.
+        \item Design and train deep learning architectures that exploit symmetry and concentration of measure.
         \item Use multi-firm investment under uncertainty model to demenstrate the performance of the method. 
     \end{itemize}
 \end{frame}
@@ -102,24 +102,28 @@
 \section{Permutation Invariance}
 \begin{frame}{Permutation Invariance}
     \begin{itemize}
-        \item It implies a structure in the solution of dynamic programming problems to reduce dimensionality.\\
+        \item Exploit symmetry in the solution of dynamic programming problems to reduce dimensionality.\\
         \vspace{0.2cm}
-        \item Dynamic programming\\
-        \begin{align*}
-        v(x,X) &= \underset{u}{max}\{r(x,u,X) + \beta E[v(x',X')]\}\\
-        s.t.\, x' &= g(x,u) + \sigma w + \eta \omega\\
-        X'&= G(X) + \Omega W + \eta\omega\bf{1}_{N}
-        \end{align*}
-        \item Definition 2 + Proposition 1
-        \begin{align*}
-        &r(x,u,\pi X) = r(x,u,X),\,G(\pi X) = \pi G(X),\,\pi \Omega = \Omega \pi \\
-        &\Rightarrow \; u(x,\pi X) = u(x,X),\,v(x,\pi X) = v(x,X)
-        \end{align*}
+        \item Permutation-invariant function:
+        \[f(x,\pi X) = f(x,X)\]
+        $\pi$ is a $N$-dimensional permutation matrix
+        %\item Dynamic programming\\
+        %\begin{align*}
+        %v(x,X) &= \underset{u}{max}\{r(x,u,X) + \beta E[v(x',X')]\}\\
+        %s.t.\, x' &= g(x,u) + \sigma w + \eta \omega\\
+        %X'&= G(X) + \Omega W + \eta\omega\bf{1}_{N}
+        %\end{align*}
+        %\item Permutation invariance:
+        %\begin{align*}
+        %&r(x,u,\pi X) = r(x,u,X),\,G(\pi X) = \pi G(X),\,\pi \Omega = \Omega \pi \\
+        %&\Rightarrow \; u(x,\pi X) = u(x,X),\,v(x,\pi X) = v(x,X)
+        %\end{align*}
         \item Proposition 2: Representation of permutation-invariant functions
         \begin{align*}
         &f(x,X) = \rho(x,\frac{1}{N}\sum_{i=1}^{N}\phi(X_i))\\
         &\rho: R^{L+1} \rightarrow R ,\; \phi: R \rightarrow R^{L}
         \end{align*}
+        \item How to exploit it?
     \end{itemize}
 \end{frame}
 
@@ -127,27 +131,29 @@
 \section{Concentration of Measure}
 \begin{frame}{Concentration of Measure}
     \begin{itemize}
-        \item Provide an upper bound on the error of the evaluation of the expectation.\\ 
+        \item Can calculate high-dimensional expectations using single Monte Carlo draw.\\ 
         \vspace{0.1cm}
         \item Proposition 3: Concentration of measure when expected gradients are bounded in N
         \begin{align*}
         P(|f(z^1) - E[f(z)]| \geq \epsilon) \leq \frac{\rho(\Sigma)}{\epsilon^2}\frac{1}{N}
         \end{align*}
+        Provide an upper bound on the error of the evaluation of the expectation. 
         It is usually better to approximate $E [f (z)]$ by $f (z^1)$ than by $f(\bf{0}_N)$
         \vspace{0.2cm}
+        \item How to exploit it?
     \end{itemize}
 \end{frame}
 
 \section{Model}
 \begin{frame}{Model}
-Model: Investment under uncertainty with many firms\\
-The inverse demand function is assumed to be: \[p(X) = \alpha_0 - \alpha_1\frac{1}{N}\sum_{i=1}^{N}x_i^{\nu}\]
+Investment under uncertainty with many firms:\\
     \begin{align*}
     v(x,X) & = \underset{u}{max}\;{p(X)x - \frac{\gamma}{2}u^2 + \beta E[v(x',X')]}\\
     s.t. \, x'&= (1-\delta)x + u + \sigma w + \eta \omega\\
     X'_{i} &= (1-\delta)X_{i} + \hat{u}(X_{i},X) + \sigma W_{i} + \eta \omega, \; for \, i\in\{2,...,N\}\\
     X'_1 &= (1-\delta)X_1 + \hat{u}(X_1,X) + \sigma w + \eta \omega
     \end{align*}
+    where $p(X)$ (the inverse demand function) is assumed to be: \[p(X) = \alpha_0 - \alpha_1\frac{1}{N}\sum_{i=1}^{N}x_i^{\nu}\]
 %Model solution: the Euler eqation
 %\[\gamma u(x,X) = \beta E[P(X') + \gamma (1-\delta)u(x',X')]\]
 %\[X' = \{(1-\delta)\hat{x} + u(\hat{x},X) + \sigma \hat{w} + \eta \omega,\; for \: (\hat{x},\hat{w}) \in (X,W)\}\]
@@ -187,25 +193,30 @@ The ReLU architecture is especially stable. The extra parameters of this archite
 \end{frame}
 
 \begin{frame}{Deep Learning}
-Computation time: of order $O(1)$ for reasonable N.
+Is it practical to implement?
 \begin{figure}[h!]
 \centering
 \includegraphics[width = 0.8\textwidth]{5.png}
 \end{figure}
+Computation time: of order $O(1)$ for reasonable N.
 \end{frame}
 
 \begin{frame}{Deep Learning}
+Explore with different network architectures:
 \begin{figure}[h!]
 \centering
-\includegraphics[width = \textwidth]{6.png}
+\includegraphics[width = 0.9\textwidth]{6.png}
 \end{figure}
-Very shallow in $\phi(Moments)$ finds a local minimum. Deep in $\phi(ReLU)$ is unsatisfactory. Explore different architectures.\\
-Results are good when we use a higher dimension of $L$.
+\begin{itemize}
+    \item Very shallow in $\phi(Moments)$ finds a local minimum. Deep in $\phi(ReLU)$ is unsatisfactory. Explore different architectures.\\
+    \item Results are good when we use a higher dimension of $L$.
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{Deep Learning}
-Case II: $\nu > 1$
+Case II: $\nu > 1$\\
+No analytical solution.
 \begin{figure}[h!]
 \centering
 \includegraphics[width = \textwidth]{7.png}
