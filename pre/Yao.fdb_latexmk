@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1712631298 "Yao.tex" "Yao.pdf" "Yao" 1712631299
+["pdflatex"] 1713241418 "Yao.tex" "Yao.pdf" "Yao" 1713241420
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -238,11 +238,11 @@
   "5.png" 1712460340 135328 4a1d301619e10eda9c76d813f8980596 ""
   "6.png" 1712460357 207726 8ff69ef31688c4232b44cea068d83e47 ""
   "7.png" 1712547753 197624 8be3cc80bfe8cb90a8b7d8041d38f256 ""
-  "Yao.aux" 1712631299 4737 0a2778ab5096ce6f881fd7cb8da20238 "pdflatex"
-  "Yao.nav" 1712631299 2514 1f3d797d235bf21a19cdb281dcc0af3c "pdflatex"
-  "Yao.out" 1712631299 793 6b6d558adf8baa756a8af6d1b399d9e5 "pdflatex"
-  "Yao.tex" 1712631297 8867 8c15dbe5e86ac34af2fc2d31cd5115f9 ""
-  "Yao.toc" 1712631299 380 7904d0cdf02fcd27daa21a0fffa60b7b "pdflatex"
+  "Yao.aux" 1713241420 4737 0a2778ab5096ce6f881fd7cb8da20238 "pdflatex"
+  "Yao.nav" 1713241420 2514 1f3d797d235bf21a19cdb281dcc0af3c "pdflatex"
+  "Yao.out" 1713241420 793 6b6d558adf8baa756a8af6d1b399d9e5 "pdflatex"
+  "Yao.tex" 1713241417 8963 b55be691220d25744f9f2fbbd91821d2 ""
+  "Yao.toc" 1713241420 380 7904d0cdf02fcd27daa21a0fffa60b7b "pdflatex"
   (generated)
   "Yao.aux"
   "Yao.log"
