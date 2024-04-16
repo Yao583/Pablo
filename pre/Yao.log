@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  16 APR 2024 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.12)  16 APR 2024 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,7 +1105,7 @@ Package rerunfilecheck Info: File `Yao.out' has not changed.
 Here is how much of TeX's memory you used:
  27853 strings out of 478268
  556096 string characters out of 5846347
- 822072 words of memory out of 5000000
+ 822074 words of memory out of 5000000
  45473 multiletter control sequences out of 15000+600000
  478857 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1125,7 +1125,7 @@ b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb>
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 >
-Output written on Yao.pdf (14 pages, 765232 bytes).
+Output written on Yao.pdf (14 pages, 765242 bytes).
 PDF statistics:
  527 PDF objects out of 1000 (max. 8388607)
  431 compressed objects within 5 object streams
