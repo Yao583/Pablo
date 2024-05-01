@@ -1,8 +1,9 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Permutation Invariance}{4}{0}{2}
-\beamer@sectionintoc {3}{Concentration of Measure}{5}{0}{3}
-\beamer@sectionintoc {4}{Model}{6}{0}{4}
-\beamer@sectionintoc {5}{Deep Learning}{7}{0}{5}
-\beamer@sectionintoc {6}{Extensions}{13}{0}{6}
-\beamer@sectionintoc {7}{Discussion}{14}{0}{7}
+\beamer@sectionintoc {1}{Overview}{2}{0}{1}
+\beamer@sectionintoc {2}{Motivation}{4}{0}{2}
+\beamer@sectionintoc {3}{Permutation Invariance}{5}{0}{3}
+\beamer@sectionintoc {4}{Concentration of Measure}{6}{0}{4}
+\beamer@sectionintoc {5}{Model}{7}{0}{5}
+\beamer@sectionintoc {6}{Deep Learning}{8}{0}{6}
+\beamer@sectionintoc {7}{Extensions}{14}{0}{7}
+\beamer@sectionintoc {8}{Discussion}{15}{0}{8}

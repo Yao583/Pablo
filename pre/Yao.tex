@@ -70,7 +70,7 @@
 
 \rightskip\rightmargin
 \title{Exploiting Symmetry in High-Dimensional Dynamic Programming}
-\author{Mahdi Ebrahimi Kahou, Jesús Fernández-Villaverde, Jesse Perla and Arnav Sood}
+\author{Mahdi Ebrahimi Kahou, Jesús Fernández-Villaverde, Jesse Perla and Arnav Sood (2021)}
 
 \institute{Boston College}
 \footnotesize{\date{\today }
@@ -84,8 +84,8 @@
 %
 \footnotesize \tableofcontents
 %
-\section{Introduction}
-\begin{frame}{Introduction}
+\section{Overview}
+\begin{frame}{Overview}
     \begin{itemize}
         \item A new method for solving high-dimensional dynamic programming problems with a finite but large number of heterogeneous agents. Accurate and quick.\\
         \vspace{0.2cm}
@@ -98,6 +98,14 @@
     \end{itemize}
 \end{frame}
 
+\section{Motivation}
+\begin{frame}{Motivation}
+    \begin{itemize}
+        \item Representative agent or a continuum of agents $\Rightarrow$ a large but finite number of heterogeneous agents.\\
+        \item Curse of dimensionality: cardinality of the state space is enormous + difficult to compute highly dimensional conditional expectations.\\
+        \item Example: one state variable productivity high or low, 50 states in the US. Cardinality of the state space is $2^{50}$. Does the order matter? Maybe only care how many states have high productivity shock. New cardinality is 51.\\
+    \end{itemize}
+\end{frame}
 
 \section{Permutation Invariance}
 \begin{frame}{Permutation Invariance}
@@ -106,7 +114,8 @@
         \vspace{0.2cm}
         \item Permutation-invariant function:
         \[f(x,\pi X) = f(x,X)\]
-        $\pi$ is a $N$-dimensional permutation matrix
+        $\pi$ is a $N$-dimensional permutation matrix\\
+        Intuition: only care about the distribution of capital among agents, do not care whether agent 12 or 17 have high capital.
         %\item Dynamic programming\\
         %\begin{align*}
         %v(x,X) &= \underset{u}{max}\{r(x,u,X) + \beta E[v(x',X')]\}\\
@@ -118,12 +127,13 @@
         %&r(x,u,\pi X) = r(x,u,X),\,G(\pi X) = \pi G(X),\,\pi \Omega = \Omega \pi \\
         %&\Rightarrow \; u(x,\pi X) = u(x,X),\,v(x,\pi X) = v(x,X)
         %\end{align*}
+        \item How to exploit it?\\
+        Permutation-invariant dynamic programming problem (Definition 2) $\rightarrow$ policy and value functions are permutation-invariant (Proposition 1) $\rightarrow$ representation (Proposition 2)
         \item Proposition 2: Representation of permutation-invariant functions
         \begin{align*}
         &f(x,X) = \rho(x,\frac{1}{N}\sum_{i=1}^{N}\phi(X_i))\\
         &\rho: R^{L+1} \rightarrow R ,\; \phi: R \rightarrow R^{L}
         \end{align*}
-        \item How to exploit it?
     \end{itemize}
 \end{frame}
 
@@ -140,7 +150,7 @@
         Provide an upper bound on the error of the evaluation of the expectation. 
         It is usually better to approximate $E [f (z)]$ by $f (z^1)$ than by $f(\bf{0}_N)$
         \vspace{0.2cm}
-        \item How to exploit it?
+        \item Intuition: suppose the continuation value function does not depend too much on the states of any given agent. The expected continuation utility will become essentially constant for all draws of (independent) idiosyncratic shocks.
     \end{itemize}
 \end{frame}
 
@@ -177,10 +187,11 @@ Investment under uncertainty with many firms:\\
 
 \begin{frame}{Deep Learning}
 Case I: $\nu = 1$\\
-Analytical solution: $u(X) = H_0 + \frac{1}{N}H_1\sum_{i=1}^{N}x_i$
+Analytical solution: $u(X) = H_0 + \frac{1}{N}H_1\sum_{i=1}^{N}x_i$\\
+$L=1$ known but do not supply this information to the architectures.
 \begin{figure}[h!]
 \centering
-\includegraphics[width = 1.1\textwidth]{3.png}
+\includegraphics[width = \textwidth]{3.png}
 \end{figure}
 \end{frame}
 
@@ -244,9 +255,11 @@ The tools are useful for solving any high-dimensional functional equations with 
     \begin{itemize}
         \item Solve high-dimensional dynamic programming problems in minutes.
         \vspace{0.2cm}
-        \item Double-descent: by increase the number of parameters, we can both fit the data perfectly and achieve outstanding generalization.
+        \item Double-descent: by increase the number of parameters, we can both fit the data perfectly and achieve outstanding generalization. The cure to over-fitting is to add more parameters.
         \vspace{0.2cm}
-        \item Model selection since results are sensitive to different network architectures. 
+        \item While normally we think of a high-dimensional state space as making integrals more difficult, a large number of shocks make expectations easier to calculate by concentration of measure.
+        \vspace{0.2cm}
+        \item Using stochastic optimization methods with highly overparameterized models tends to robustly find solutions that fulfill a minimum norm solution in the space of approximating functions.(ADAM)
     \end{itemize}
 \end{frame}
 \end{document}
